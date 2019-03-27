@@ -5,11 +5,18 @@ spring:
     username: root
     password: landicorp
 zuul:
-  sensitive-headers: "Cookie", "Set-Cookie", "Authorization"
+  # 如果这个为空，zuul会把头部信息转发给其它服务
+  sensitive-headers:
   routes:
-    lucky-user: /user/**
-    lucky-content: /content/**
-    lucky-bonus: /bonus/**
+    lucky-user:
+      path: /user/**
+      strip-prefix: false
+    lucky-content:
+      path: /content/**
+      strip-prefix: false
+    lucky-bonus:
+      path: /bonus/**
+      strip-prefix: false
 management:
   security:
     enabled: false  
