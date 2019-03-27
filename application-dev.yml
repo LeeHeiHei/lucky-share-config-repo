@@ -9,3 +9,7 @@ eureka:
 feign:
   hystrix:
     enabled: true
+# token的有效时间，单位秒
+token:
+  duration:
+    time: 604800
