@@ -26,4 +26,4 @@ management:
     enabled: false
 
 # 用于测试配置更新的
-profile: test
+profile: test-update
