@@ -16,9 +16,3 @@ token:
 
 # 用于测试配置更新的
 profile: test
-
-management:
-  endpoints: 
-      web: 
-        exposure:
-          include: health, info, refresh
