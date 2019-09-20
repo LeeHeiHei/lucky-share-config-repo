@@ -13,6 +13,17 @@ feign:
 token:
   duration:
     time: 604800
+# actuator端点配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+  security:
+    enabled: false
 
 # 用于测试配置更新的
 profile: test
