@@ -13,3 +13,6 @@ feign:
 token:
   duration:
     time: 604800
+
+# 用于测试配置更新的
+profile: test
